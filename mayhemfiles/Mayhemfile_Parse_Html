@@ -1,0 +1,6 @@
+project: scraper
+target: parse-html
+duration: 90
+
+cmds:
+    - cmd: /parse_html

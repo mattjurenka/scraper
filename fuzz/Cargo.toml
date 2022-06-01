@@ -1,0 +1,31 @@
+[package]
+name = "scraper-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.scraper]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "parse_html"
+path = "fuzz_targets/parse_html.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "parse_selector"
+path = "fuzz_targets/parse_selector.rs"
+test = false
+doc = false

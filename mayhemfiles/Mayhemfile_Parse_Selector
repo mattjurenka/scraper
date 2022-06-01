@@ -1,0 +1,6 @@
+project: scraper
+target: parse-selector
+duration: 90
+
+cmds:
+    - cmd: /parse_selector
