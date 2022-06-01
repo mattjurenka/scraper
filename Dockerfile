@@ -17,4 +17,4 @@ FROM --platform=linux/amd64 rustlang/rust:nightly
 
 ## TODO: Change <Path in Builder Stage>
 COPY --from=builder /scraper/fuzz/target/x86_64-unknown-linux-gnu/release/parse_selector /
-COPY --from=builder /scraper/fuzz/target/x86_64-unknown-linux-gnu/release/parse_fragment /
+COPY --from=builder /scraper/fuzz/target/x86_64-unknown-linux-gnu/release/parse_html /
